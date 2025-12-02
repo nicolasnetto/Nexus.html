@@ -1,4 +1,5 @@
 /* ---- RESET ---- */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,6 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
-    padding: 20px 0;
     animation: fadeBody 0.8s ease-out forwards;
 }
 
@@ -25,6 +25,7 @@ body {
 }
 
 /* ---- CONTAINER ---- */
+
 .container {
     width: 100%;
     max-width: 430px;
@@ -39,6 +40,7 @@ body {
 }
 
 /* ---- LOGO + BRILHO ---- */
+
 .logo-wrapper {
     position: relative;
     display: flex;
@@ -48,19 +50,19 @@ body {
 
 .logo-glow {
     position: absolute;
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     z-index: 1;
-    background: radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%),
-                radial-gradient(circle, rgba(214,178,94,0.18), transparent 75%),
-                radial-gradient(circle at 70% 70%, rgba(0,0,0,0.35), transparent 80%);
-    filter: blur(45px);
-    opacity: 0.55;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 70%),
+                radial-gradient(circle, rgba(214, 178, 94, 0.22), transparent 75%),
+                radial-gradient(circle at 70% 70%, rgba(0, 0, 0, 0.35), transparent 80%);
+    filter: blur(55px) saturate(130%);
+    opacity: 0.6;
 }
 
 .logo {
-    width: 170px;
+    width: 180px;
     z-index: 2;
     animation: logoFade 1s ease forwards;
 }
@@ -71,22 +73,25 @@ body {
 }
 
 /* ---- TEXTOS ---- */
+
 .title {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 }
 
 .subtitle {
     margin-top: 6px;
     font-size: 14px;
-    opacity: 0.75;
+    color: rgba(241, 241, 241, 0.78);
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.12);
 }
 
 /* ---- CARDS ---- */
+
 .cards {
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .card {
@@ -100,28 +105,33 @@ body {
     text-decoration: none;
     font-size: 18px;
     transition: 0.25s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
     background: #d6b25e;
     color: #000;
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 0 12px rgba(214,178,94,0.42);
+    box-shadow: 0 0 12px rgba(214, 178, 94, 0.45);
 }
 
 /* ---- LINHA SEPARADORA ---- */
+
 .separator {
-    margin: 38px auto;
-    width: 75%;
+    margin: 40px auto;
+    width: 80%;
     height: 1px;
-    background: linear-gradient(to right, transparent, #d6b25e, transparent);
-    opacity: 0.8;
+    background: linear-gradient(to right, transparent, #d6b25e, rgba(241, 241, 241, 0.7), #d6b25e, transparent);
+    opacity: 0.9;
 }
 
 /* ---- RODAPÉ ---- */
+
 footer {
-    margin-top: 25px;
+    margin-top: 28px;
     font-size: 12px;
-    opacity: 0.60;
+    color: rgba(241, 241, 241, 0.65);
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.08);
     letter-spacing: 1px;
 }
